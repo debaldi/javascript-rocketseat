@@ -34,3 +34,41 @@ const myName = (name) => {
 }
 
 myName('Emerson de Baldi')
+
+
+// callback function
+// É uma function que sé é executada apos o processamento de outra function
+
+function myNameIs (idade){
+    console.log('Executando antes do Callback')    
+    idade()
+    console.log('Executando após o Callback')
+}
+
+myNameIs(
+    () => {
+        console.log('Executando o Callback')       
+    }
+)
+
+/* 
+    Function() constructor
+
+    * expressão new
+    * criar um novo objeto
+    * this keyword
+*/
+
+function Person(name){
+    this.name = name
+    this.walk = function(){
+        return this.name +' está andando.'
+    }
+    
+}
+
+const emerson = new Person("Emerson")
+const luh = new Person('Luciana')
+
+console.log(emerson.walk())
+console.log(luh)
