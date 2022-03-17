@@ -149,3 +149,18 @@ console.log( NaN ? 'Verdadeiro' : 'Falso' )
     -infinity
 */
 console.log( 3.23 ? 'Verdadeiro' :'Falso' )
+
+/* Operator precedence
+        Precedencia de Operadores
+
+    * grouping                      ( )
+    * negação e incremento          ! ++ --
+    * multiplicação e divisão       * /
+    * adição e subtração            + -
+    * relacionais                   < <= > >=
+    * igualdade                     == != === !==
+    * AND                           &&
+    * OR                            ||
+    * condicional                   ? :
+    * assingment (atribuição)       = += -= *= %=
+*/
