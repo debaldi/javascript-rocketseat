@@ -84,3 +84,68 @@ console.log( one === 1 )
 // !==  estritamente diferente de
 console.log( two !== "2" )
 console.log( two !== 2 )
+
+// Operadores lógicos
+/*
+NOT ! - não - !negação
+true -> false
+false -> true
+
+AND & - e
+true & true  = true
+true & false = false
+false & true = false
+false & false = false
+
+OR || - ou
+true || true  = true
+true || false = true
+false || true = true
+false || false = false
+
+*/
+
+// Operador COndicional Ternário
+
+let idade = 18
+
+let comeOfAge = idade >= 18 ? 'Maior Idade' : 'Menor Idade'
+console.log(comeOfAge)
+
+
+// Operador de String (String operator)
+// Comparision (comparação)
+console.log( 'a' == 'b' )
+//Concatenation (concatenação)
+console.log( 'java' + 'script' )
+
+let java = 'java'
+console.log( java += 'script' )
+
+/*
+    FALSY
+    Quando um valor é considerado falso em contexto onde um bollean é oblrigatório ( condicionais e loops )
+    false
+    0
+    -0
+    ""
+    null
+    undefined
+    NaN
+*/
+console.log( NaN ? 'Verdadeiro' : 'Falso' )
+
+/*
+    TRUTHY
+    Quando um valor é considerado verdadeiro em contexto onde um bollean é oblrigatório ( condicionais e loops )
+    true
+    {}
+    []
+    1
+    -1
+    3.23
+    "string qualquer"
+    infinity
+    -infinity
+*/
+console.log( 3.23 ? 'Verdadeiro' :'Falso' )
