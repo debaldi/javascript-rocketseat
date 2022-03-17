@@ -13,4 +13,46 @@ if (heghTemperature) {
 }
 
 // Condições Multiplas
-//Switch\
+//Switch
+function calculadora(number1, operador, nunmber2){
+    let resultado
+
+    switch (operador){
+        case '+':
+            resultado = number1 + nunmber2
+            break
+        case '-':
+            resultado = number1 - nunmber2
+            break
+        case '*':
+            resultado = number1 * nunmber2
+            break
+        case '/':
+            resultado = number1 / nunmber2
+            break
+        default:
+            console.log('Operador não Cadastrado!')
+            break
+    }
+    return resultado
+}
+
+console.log(calculadora(10, "/", 2))
+
+
+// Throw - Disparar, lançar
+// try - Tentar
+// catch - Pegar
+
+function sayMyName ( name = ''){
+    if ( name === '' ){
+        throw 'Nome é Obrigatório!'
+    }
+    console.log("depois do erro!")
+}
+
+try {
+    sayMyName()
+} catch (e){
+    console.log(e)
+}
