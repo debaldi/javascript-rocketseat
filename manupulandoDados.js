@@ -14,7 +14,7 @@ let numberDois = '9'
 // Type Conversion (typecasting) - Explicito
 console.log(Number(numberDois) + numberUm)
 
-//Type COersion - Implicita, transforma o numberUm em string
+//Type Coersion - Implicita, transforma o numberUm em string
 console.log(numberDois + numberUm)
 
 
