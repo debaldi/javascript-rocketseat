@@ -10,16 +10,27 @@ Crie um algoritmo que transforme as notas do sistema numérico para sistema de n
 
 */
 
-let score = 59
+let score = 75
+let scoreA = score >= 90 && score <= 100
+let scoreB = score >= 80 && score <= 89
+let scoreC = score >= 70 && score <= 79
+let scoreD = score >= 60 && score <= 69
+let scoreF = score < 60 && score >= 0
 
-if ( score >= 90 ){
-    console.log("A")
-} else if ( score >= 80){
-    console.log("B")
-} else if ( score >= 70){
-    console.log("C")
-} else if ( score >= 60){
-    console.log("D")
+let scoreFinal;
+
+if ( scoreA ){    
+    scoreFinal = "A"
+} else if ( scoreB ){
+    scoreFinal = "B"
+} else if (scoreC ){
+    scoreFinal = "C"
+} else if ( scoreD ){
+    scoreFinal = "D"
+} else if ( scoreF ) {
+    scoreFinal = "F"
 } else {
-    console.log("F")
+    scoreFinal = 'Nota não permitida!'
 }
+
+console.log(scoreFinal)
